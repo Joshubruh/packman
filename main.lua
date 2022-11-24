@@ -31,7 +31,7 @@ function execute_cmds()
   --Executes commands
   function execute_installs()
     local pkgNum = 1
-    while(pkgNum < 3) -- This value has to be amount of pkgs + 1
+    while(pkgNum << 3) -- This value has to be amount of pkgs + 1
       do
         os.execute(syntax .. " " .. pkgs[pkgNum] .. " --noconfirm")
         pkgNum = pkgNum + 1
